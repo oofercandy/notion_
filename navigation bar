@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #a6916a;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  background">
+		<a id="Geometry" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calculator"></i> Geometry</a>
+		<a id="English" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book-open"></i> English</a>
+		<a id="French" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-language"></i> French</a>
+		<a id="Chemistry" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-flask-vial"></i> Chemistry</a>
+		<a id="History" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-landmark-dome"></i> History</a>
+		<a id="Photography" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-camera-retro"></i> Photography</a>
+		<a id="Religion" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-cross"></i> Religion</a>
+		<a id="Homeroom" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Homeroom</a>
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'Geometry')
+				window.open("https://Geometry.com", '_blank').focus();
+			else if (id == "English")
+				window.open("https://English.com", '_blank').focus();
+			else if (id == "French")
+				window.open("https://French.com", '_blank').focus();
+			else if (id == "month")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "Chemistry")
+				window.open("https://Chemistry.com", '_blank').focus();
+			else if (id == "History")
+				window.open("https://History.com", '_blank').focus();
+			else if (id == "Photography")
+				window.open("https://Photography.com", '_blank').focus();
+			else if (id == "Religion")
+				window.open("https://Religion.com", '_blank').focus();
+			else if (id == "Homeroom")
+				window.open("https://Homeroom.com", '_blank').focus();
+			
+		}
+	</script>
+
+
+</body>
+
+</html>
